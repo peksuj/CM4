@@ -257,17 +257,17 @@ static int jdi_panel_enable(struct drm_panel *panel)
 }
 
 static const struct drm_display_mode default_mode = {
-		.clock = (454 + 66 + 20 + 60) * (454 + 26 + 8 + 12) * 60 / 1000, // 17249, //14374, //20124,
+		.clock = (454 + 60 + 20 + 60) * (454 + 10 + 8 + 12) * 60 / 1000, // 17249, //14374, //20124,
 
 		.hdisplay = 454,
-		.hsync_start = 454 + 66,
-		.hsync_end = 454 + 66 + 20,
-		.htotal = 454 + 66 + 20 + 60, // res, x , x , hsync
+		.hsync_start = 454 + 60,
+		.hsync_end = 454 + 60 + 20,
+		.htotal = 454 + 60 + 20 + 60, // res, x , x , hsync
 
 		.vdisplay = 454,
-		.vsync_start = 454 + 26,
-		.vsync_end = 454 + 26 + 8,
-		.vtotal = 454 + 26 + 8 + 12, //(hactive + hfront_porch + hsync_len + hback_porch)
+		.vsync_start = 454 + 10,
+		.vsync_end = 454 + 10 + 8,
+		.vtotal = 454 + 10 + 8 + 12, //(hactive + hfront_porch + hsync_len + hback_porch)
 
 		.flags = 0, //DRM_MODE_FLAG_NHSYNC | DRM_MODE_FLAG_NVSYNC,
 		// .type = DRM_MODE_TYPE_DRIVER | DRM_MODE_TYPE_PREFERRED,
