@@ -267,7 +267,7 @@ static const struct drm_display_mode default_mode = {
 		.vdisplay = 454,
 		.vsync_start = 454 + 26,
 		.vsync_end = 454 + 26 + 8,
-		.vtotal = 454 + 226 + 8 + 12, //(hactive + hfront_porch + hsync_len + hback_porch)
+		.vtotal = 454 + 26 + 8 + 12, //(hactive + hfront_porch + hsync_len + hback_porch)
 
 		.flags = 0, //DRM_MODE_FLAG_NHSYNC | DRM_MODE_FLAG_NVSYNC,
 		// .type = DRM_MODE_TYPE_DRIVER | DRM_MODE_TYPE_PREFERRED,
